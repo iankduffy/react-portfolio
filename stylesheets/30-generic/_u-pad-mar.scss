@@ -1,4 +1,4 @@
-$sizesmq: xs, sm, md, lg;
+$sizesmq: 0, xs, sm, md, lg;
 
 @each $key, $size in $sizes {
   @each $class, $dir in $direction {
@@ -16,13 +16,13 @@ $sizesmq: xs, sm, md, lg;
     @each $mq, $sizemq in $sizesmq {
       .u-pad-#{$class}-#{$key}\@#{$mq} {
         @include breakpoint-max($mq) {
-          padding-#{$dir}: $size;
+          padding-#{$dir}: $size !important;
         }
       }
 
       .u-mar-#{$class}-#{$key}\@#{$mq} {
         @include breakpoint-max($mq) {
-          margin-#{$dir}: $size;
+          margin-#{$dir}: $size !important;
         }
       }
     }
