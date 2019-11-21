@@ -46,6 +46,7 @@
   }
 
   @include breakpoint-min(md) {
+    border-right: $primary-color 1px solid; 
   }
 }
 
