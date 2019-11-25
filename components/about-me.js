@@ -3,7 +3,12 @@ import { faGithubSquare, faLinkedin, faInstagram } from '@fortawesome/free-brand
 
 const AboutMe = () => {
   const Links = [faGithubSquare, faLinkedin, faInstagram]
-  const Skills = ["Ruby On Rails", "NextJS", "ReactJS", "JS", "SASS", "Git", "AdobeXD"]
+  const Skills = ["Ruby On Rails", "React", "Javascript", "SASS", "Git", "Adobe XD"]
+
+  const imageName = (skill) => {
+    const img = skill.toLowerCase().split(' ').join('-')
+    return img
+  }
 
   return (
     <div className="container container__row container__row--v-center u-mar-v-lg u-pad-h-md" id="about">
@@ -19,8 +24,8 @@ const AboutMe = () => {
       <h2>About Me</h2>
       <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
       <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-      <div className="container__row container--space-between u-mar-t-md">
-        {Skills.map((skill, key) => <div key={key} className="skill">{skill}</div>)}
+      <div className="container__row container--space-between u-mar-t-md o-flex-al-stretch">
+        {Skills.map((skill, key) => <div key={key} className="skill container__column "><img src={`/${imageName(skill)}-logo.svg`} alt={skill}/><span>{skill}</span></div>)}
       </div>
     </div>
   </div>

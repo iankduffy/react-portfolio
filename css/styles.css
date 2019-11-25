@@ -4866,6 +4866,7 @@ h4,
 }
 
 .icon {
+  padding: 5px;
   fill: none;
   stroke: #223a57;
   stroke-width: 10px;
@@ -5338,7 +5339,7 @@ h4,
 
 @media (max-width: 738px) {
   .u-bor-gen {
-    border-top: #223a57 1px solid;
+    border-right: none;
   }
 }
 
@@ -5349,10 +5350,17 @@ h4,
 }
 
 .skill {
-  width: 50px;
-  height: 50px;
-  background: #000;
-  color: #fff;
+  color: #223a57;
+  text-align: center;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 10%;
+          flex: 0 1 10%;
+  margin: 0px 20px;
+}
+
+.skill img {
+  height: 75px;
+  margin-bottom: 10px;
 }
 
 .u-order-1 {
