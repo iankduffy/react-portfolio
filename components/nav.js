@@ -8,7 +8,6 @@ const Nav = () => {
 
   let scrollTo = (e, target) => {
     e.preventDefault()
-    console.log(target)
     document.getElementById(target).scrollIntoView({
       behavior: 'smooth'
    })

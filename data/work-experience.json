@@ -9,25 +9,23 @@
     ]
   },
   {
-    "companyName": "Sportsshoes.com", 
+    "companyName": "Sports Shoes", 
     "position": "Front End Developer", 
-    "dates": "Feburary 2018 - Auguest 2018",
+    "dates": "Feburary 2018 - August 2018",
     "link": "https://www.sportsshoes.com/",
     "text": [
-      "In my position at Sportshoes.com, one of my responsibilities is building new store pages for brands such as Adidas and Mizuno for their new product series, based on the designs and specifications given by the design team.",
-      "Other responsibilities in the position include updating and adding new features such as content sliders, banner images, videos, interactive elements and page translation to other languages.",
-      "This position has required me to use my skills in web development such as Sass, jQuery, Javascript, php, MySQL and git, as well utilising my attention to details, and my knowledge of web standards to reach the task given."
+      "While at Sportshoes.com my responsibilities included building new brand store pages for their several clients, based on the designs and specifications given by the design team.",
+      "Other responsibilities in the position include updating and adding new features such as content sliders, banner images, videos, interactive elements and page translation to other languages, while also pushing to bring the site to current web standards."
     ]
   },
   {
-    "companyName": "Nextworx Recruitment", 
+    "companyName": "Networx Recruitment", 
     "position": "Digital Designer / Developer", 
     "dates": "April 2016 - December 2017",
     "link": "https://www.networxrecruitment.com/",
     "text": [
-      "During my position as Digital Designer at networx Recruitment, I was responsible for following a number of our clients' branding guidelines while building their recruitment system, such as their careers page both custom and template, job adverts, onboarding sites and candidate experience branding. During my time there I also helped run Housing Jobs' social media pages, set up social media apps for clients' twitter and facebook pages and assist with updates to a previous version of our recruitment software website.",
-      "A major development I did at my position at networx Recruitment is to allow the clients onboarding sites to work on multiple devices, allowing candidates to access their onboarding information and documents from any device. This was done using one stylesheet for over 40 different onboarding sites.",
-      "During my time at Networx, I used Adobe Creative Cloud on a daily basis to create mockups, assets, prototypes, illustrations and documents as well as using HTML5, CSS3 and Javascript/jQuery as a part of the building process for career sites, onboarding sites and candidate experience."
+      "During my time at Networx Recruitment, I was responsible for desigin and building their recruitment system, such as their careers page both custom and template, job adverts, onboarding sites candidate experience branding and admin panel, to match the client business brand. I also helped run Housing Jobs' social media pages, set up social media apps for clients' twitter and facebook pages.",
+      "A major development I did during my position at Networx Recruitment is to allow the all clients onboarding sites to work on multiple devices, allowing candidates to access their onboarding information and documents from any device."
     ]
   }
 ]
