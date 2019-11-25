@@ -20,6 +20,10 @@
     z-index: 2;
     position: relative;
   }
+
+  @include breakpoint-max(md) {
+    min-height: 90vh;
+  }
 }
 
 .c-profile-pic {
@@ -27,9 +31,14 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50%;
-  width: 400px;
-  height: 400px;
+  width: 350px;
+  height: 350px;
   border-radius: 50%;
   border: #fff 10px solid;
   text-transform: uppercase;
+  margin: 0 auto;
+  @include breakpoint-max(md) {
+    width: 85vw;
+    height: 85vw;
+  }
 }

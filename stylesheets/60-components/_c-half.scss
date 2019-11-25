@@ -11,7 +11,7 @@
     
     @include breakpoint-max(md) {
       & {
-       @extend %u-t-cen\@md;
+      //  @extend %u-t-cen\@md;
       }
     }
   }

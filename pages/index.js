@@ -5,6 +5,7 @@ import AboutMe from '../components/about-me'
 import WorkExperience from '../components/work-experience'
 import FullWidthLink from '../components/full-width-link'
 import Projects from '../components/projects'
+import '../components/svg/fontawesome';
 
 const Home = () => (
   <div>

@@ -19,6 +19,24 @@
   }
 }
 
+%u-t-cen\@lg,
+.u-t-cen\@lg {
+  @include breakpoint-max(lg) {
+    &{
+      text-align: center;
+    }
+  }
+}
+
+%u-t-l\@md,
+.u-t-l\@md {
+  @include breakpoint-max(md) {
+    &{
+      text-align: left;
+    }
+  }
+}
+
 .u-flex-self--end {
   align-self: flex-end
 }

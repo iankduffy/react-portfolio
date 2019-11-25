@@ -26,6 +26,20 @@ $sizesmq: 0, xs, sm, md, lg;
         }
       }
     }
+
+    @each $mq, $sizemq in $sizesmq {
+      .u-pad-#{$class}-#{$key}\@#{$mq}-min {
+        @include breakpoint-min($mq) {
+          padding-#{$dir}: $size !important;
+        }
+      }
+
+      .u-mar-#{$class}-#{$key}\@#{$mq}-min {
+        @include breakpoint-min($mq) {
+          margin-#{$dir}: $size !important;
+        }
+      }
+    }
   }
 
   %u-pad-v-#{$key},
@@ -77,6 +91,37 @@ $sizesmq: 0, xs, sm, md, lg;
 
     .u-mar-v-#{$key}\@#{$mq} {
       @include breakpoint-max($mq) {
+        margin-top: $size;
+        margin-bottom: $size;
+      }
+    }
+  }
+
+  @each $mq, $sizemq in $sizesmq {
+    
+    .u-pad-h-#{$key}\@#{$mq}-min {
+      @include breakpoint-min($mq) {
+        padding-left: $size;
+        padding-right: $size;
+      }
+    }
+
+    .u-pad-v-#{$key}\@#{$mq}-min {
+      @include breakpoint-min($mq) {
+        padding-top: $size;
+        padding-bottom: $size;
+      }
+    }
+
+    .u-mar-h-#{$key}\@#{$mq}-min {
+      @include breakpoint-min($mq) {
+        margin-left: $size;
+        margin-right: $size;
+      }
+    }
+
+    .u-mar-v-#{$key}\@#{$mq}-min {
+      @include breakpoint-min($mq) {
         margin-top: $size;
         margin-bottom: $size;
       }

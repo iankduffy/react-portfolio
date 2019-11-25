@@ -2,9 +2,9 @@ import Project from '../components/c-projects'
 
 const Projects = () => {
   return (
-    <div className="u-mar-v-lg">
+    <div className="u-mar-v-lg" id="projects">
       <h2 className="u-t-cen">My Projects</h2>
-      <div className="container container__row u-mar-t-md">
+      <div className="container container__row u-mar-t-md u-pad-h-sm">
         <Project/>
         <Project/>
         <Project/> 
