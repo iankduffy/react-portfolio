@@ -1,6 +1,7 @@
+import axios from 'axios'
+
 exports.handler = function(event, context, callback) {
-  callback(null, {
-    statusCode: 200,
-    body: "Hello, World"
-  });
+    const data = axios.get(`https://graph.instagram.com/me/media?&fields=id,caption,media_type,media_url,permalink&access_token=${process.env.INSTAGRAM}`)
+    .then(data => {return data})
+    console.log("hi Ian")
 };
