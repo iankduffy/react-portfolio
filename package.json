@@ -7,7 +7,7 @@
     "start:lamda": "netlify-lambda serve functions",
     "build": "next build",
     "start": "next start",
-    "export": "next build && next export && netlify-lambda serve functions"
+    "export": "next build && next export && netlify-lambda build functions"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.25",
