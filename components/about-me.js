@@ -16,7 +16,7 @@ const AboutMe = () => {
     const res = await axios.get(`/.netlify/functions/helloworld`)
     const data = await res.data
 
-    console.log(`Show data fetched. Count: ${data}`)
+    console.log(data)
   }
     // const fetchData = () => {
   //   fetch(`/.netlify/functions/helloworld`)
