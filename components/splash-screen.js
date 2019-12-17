@@ -8,8 +8,8 @@ const SplashScreen = () => (
 					<h1>IAN DUFFY</h1>
           <p className="h2">Web Developer | Leeds</p>
 					<div className="container container__row u-mar-v-md">
-						<a className="c-btn col-5 u-mar-r-md" href="/cv.pdf" target="_blank">My CV</a>
-						<a className="c-btn col-5 u-mar-r-md" href="https://github.com/iankduffy">My Github</a>
+						<a className="c-btn col-5 u-mar-r-md u-stretch" href="/cv.pdf" target="_blank">My CV</a>
+						<a className="c-btn col-5 u-mar-r-md u-stretch" href="https://github.com/iankduffy" target="_blank">My Github</a>
 					</div>
 				</div>
 			</div>

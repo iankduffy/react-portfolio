@@ -4838,6 +4838,9 @@ h4,
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
   }
 }
 
@@ -5202,87 +5205,60 @@ h4,
   transition: 500ms;
 }
 
-.c-project:hover .c-project__btn {
-  background: rgba(34, 58, 87, 0.7);
+.c-project--disabled {
+  opacity: 0.6;
 }
 
-.c-project:hover .c-project__image img {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
-.c-product {
-  -webkit-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.05);
-          box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.05);
+.c-instagram--post {
+  width: 50vw;
+  min-height: 50vw;
+  color: white;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+  position: relative;
   cursor: pointer;
-  text-decoration: none;
+}
+
+@media (min-width: 1025px) {
+  .c-instagram--post {
+    width: 25vw;
+    min-height: 25vw;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 25%;
+            flex: 1 1 25%;
+    background: #223a57;
+  }
+  .c-instagram--post:hover .c-instagram--text {
+    background: rgba(0, 0, 0, 0.8);
+    opacity: 0.7;
+    color: #fff;
+  }
+}
+
+.c-instagram--text {
+  position: relative;
   color: #282828;
-  background: #fff;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 23%;
-          flex: 0 1 23%;
-  min-width: 200px;
 }
 
-.c-product a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: stretch;
-      -ms-flex-pack: stretch;
-          justify-content: stretch;
-  height: 100%;
-}
-
-.c-product img {
-  width: 100%;
-}
-
-.c-product__btn {
-  width: 100%;
-  background: none;
-  padding: 8px;
-  text-transform: uppercase;
-  cursor: pointer;
-  margin-top: auto;
-}
-
-.c-product:hover {
-  -webkit-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
-}
-
-.c-product:hover .c-product__btn {
-  background: #00B987;
-  color: #fff;
-}
-
-.c-product__title {
-  font-weight: 400;
-  font-size: 0.9rem;
-}
-
-.c-product__price {
-  font-weight: 700;
-  font-size: 1rem;
-  text-transform: uppercase;
-  color: #223a57;
-}
-
-.c-star {
-  padding: 0 2px;
-}
-
-.c-star svg {
-  stroke: #EEEEEE;
-}
-
-.c-star--active svg {
-  fill: goldenrod;
+@media (min-width: 738px) {
+  .c-instagram--text {
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .u-t-cen {
@@ -5355,14 +5331,28 @@ h4,
   color: #223a57;
   text-align: center;
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 10%;
-          flex: 0 1 10%;
-  margin: 0px 20px;
+      -ms-flex: 0 1 12%;
+          flex: 0 1 12%;
+  margin: 10px 10px;
+}
+
+@media (max-width: 738px) {
+  .skill {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 24%;
+            flex: 0 1 24%;
+  }
 }
 
 .skill img {
   height: 50px;
   margin-bottom: 10px;
+}
+
+.u-stretch {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .u-order-1 {

@@ -70,11 +70,19 @@
 .skill{
   color: $primary-color;
   text-align: center;
-  flex: 0 1 10%;
-  margin: 0px 20px;
+  flex: 0 1 12%;
+  margin: 10px 10px;
+
+  @include breakpoint-max(md) {
+    flex: 0 1 24%
+  }
 
   img {
     height: 50px;
     margin-bottom: 10px;
   }
+}
+
+.u-stretch {
+  flex-grow: 1;
 }
