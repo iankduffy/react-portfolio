@@ -4,7 +4,7 @@ import axios from 'axios'
 import instagramData from '../data/instragram-data'
 
 const InstagramContainer = () => {
-  const [data, setData] = useState([])
+  const [data, setData] = useState()
 
   useEffect(() => {
     const fetchData = async () => {
