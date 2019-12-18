@@ -1,23 +1,24 @@
 import InstagramImage from '../components/instagram-photo'
-import {useState,useEffect} from 'react'
+import { useState, useEffect } from 'react'
 import axios from 'axios'
+// import instagramData from '../data/instragram-data'
 
 const InstagramContainer = () => {
-  const [data, setData] = useState([])
+  const [data, setData] = useState(instagramData)
 
   useEffect(() => {
     const fetchData = async () => {
-      const data = await axios.get(`/.netlify/functions/helloworld`)
-      console.log(data)
-      setData(data)
+      const res = await axios.get(`/.netlify/functions/helloworld`)
+      setData(res)
     }
 
     fetchData()
   }, []);
-
+  
+  console.log(instagramData)
   return (
     <div className="container--fluid u-mar-t-md container__row">
-      {data.map((post) => <InstagramImage post={post}/>)}
+      { data ? data.map((post) => <InstagramImage post={post}/>) : "" }
     </div>
   )
 }
