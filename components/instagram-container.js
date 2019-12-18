@@ -2,12 +2,12 @@ import InstagramImage from '../components/instagram-photo'
 import {useState} from 'react'
 import axios from 'axios'
 
-const FullWidthLink = () => {
+const InstagramContainer = () => {
   const [data, setData] = useState([])
 
   const fetchData = async () => {
     const data = await axios.get(`/.netlify/functions/helloworld`)
-  
+    console.log(data)
     setData(data)
   }
   
@@ -20,4 +20,4 @@ const FullWidthLink = () => {
   )
 }
   
-export default FullWidthLink;
+export default InstagramContainer;
