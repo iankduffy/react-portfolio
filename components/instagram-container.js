@@ -4,11 +4,12 @@ import axios from 'axios'
 import instagramData from '../data/instragram-data'
 
 const InstagramContainer = () => {
-  const [data, setData] = useState()
+  const [data, setData] = useState(undefined)
 
   useEffect(() => {
     const fetchData = async () => {
       const res = await axios.get(`/.netlify/functions/helloworld`)
+      console.log(res)
       setData(res)
     }
 
@@ -18,7 +19,7 @@ const InstagramContainer = () => {
 
   return (
     <div className="container--fluid u-mar-t-md container__row">
-      {console.log(data)}
+      {console.log({data})}
       { data !== undefined ? data.map((post) => <InstagramImage post={post}/>) : "" }
     </div>
   )
