@@ -4,16 +4,16 @@ import axios from 'axios'
 import instagramData from '../data/instragram-data'
 
 const InstagramContainer = () => {
-  const [data, setData] = useState(instagramData)
+  const [data, setData] = useState([])
 
-  // useEffect(() => {
-  //   const fetchData = async () => {
-  //     const res = await axios.get(`/.netlify/functions/helloworld`)
-  //     setData(res)
-  //   }
+  useEffect(() => {
+    const fetchData = async () => {
+      const res = await axios.get(`/.netlify/functions/helloworld`)
+      setData(res)
+    }
 
-  //   fetchData()
-  // }, []);
+    fetchData()
+  }, []);
   // console.log(instagramData)
 
   return (
