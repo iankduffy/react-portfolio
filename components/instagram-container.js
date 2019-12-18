@@ -18,7 +18,8 @@ const InstagramContainer = () => {
 
   return (
     <div className="container--fluid u-mar-t-md container__row">
-      { data ? data.map((post) => <InstagramImage post={post}/>) : "" }
+      {console.log(data)}
+      { data !== undefined ? data.map((post) => <InstagramImage post={post}/>) : "" }
     </div>
   )
 }
