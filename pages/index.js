@@ -5,7 +5,7 @@ import AboutMe from '../components/about-me'
 import WorkExperience from '../components/work-experience'
 import FullWidthLink from '../components/full-width-link'
 import Projects from '../components/projects'
-import InstagramImage from '../components/instagram-photo'
+import InstagramContainer from '../components/instagram-container'
 import '../components/svg/fontawesome';
 
 const Home = () => (
@@ -17,9 +17,7 @@ const Home = () => (
       {/* <FullWidthLink/> */}
       <Projects />
       <h2 className="u-t-cen">See What I'm Doing</h2>
-      <div className="container--fluid u-mar-t-md container__row">
-        {Array(4).fill(<InstagramImage/>)}
-      </div>
+      <InstagramContainer />
     </Layout>
   </div>
 )

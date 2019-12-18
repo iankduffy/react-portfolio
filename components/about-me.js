@@ -1,6 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithubSquare, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons'
-import axios from 'axios'
 
 const AboutMe = () => {
   const Links = [faGithubSquare, faLinkedin, faInstagram]
@@ -10,22 +9,6 @@ const AboutMe = () => {
     const img = skill.toLowerCase().split(' ').join('-')
     return img
   }
-
-  const fetchData = async () => {
-    console.log("hit")
-    const res = await axios.get(`/.netlify/functions/helloworld`)
-    const data = await res.data
-
-    console.log(data)
-  }
-    // const fetchData = () => {
-  //   fetch(`/.netlify/functions/helloworld`)
-  //   .then((data) => console.log(data))
-  // }
-
-  // fetchData()
-
-  fetchData()
 
   return (
     <div className="container container__row container__row--v-center u-mar-v-lg u-pad-h-md" id="about">

@@ -9,6 +9,7 @@
     "start": "next start",
     "export": "next build && next export"
   },
+  "proxy": "http://localhost:9000",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.25",
     "@fortawesome/free-brands-svg-icons": "^5.11.2",
