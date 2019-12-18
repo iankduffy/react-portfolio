@@ -1,19 +1,19 @@
 import InstagramImage from '../components/instagram-photo'
 import { useState, useEffect } from 'react'
 import axios from 'axios'
-// import instagramData from '../data/instragram-data'
+import instagramData from '../data/instragram-data'
 
 const InstagramContainer = () => {
-  const [data, setData] = useState([])
+  const [data, setData] = useState(instagramData)
 
-  useEffect(() => {
-    const fetchData = async () => {
-      const res = await axios.get(`/.netlify/functions/helloworld`)
-      setData(res)
-    }
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     const res = await axios.get(`/.netlify/functions/helloworld`)
+  //     setData(res)
+  //   }
 
-    fetchData()
-  }, []);
+  //   fetchData()
+  // }, []);
   // console.log(instagramData)
 
   return (
