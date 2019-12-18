@@ -11,13 +11,13 @@ const InstagramContainer = () => {
       console.log(data)
       setData(data)
     }
-    
+
     fetchData()
   }, []);
 
   return (
     <div className="container--fluid u-mar-t-md container__row">
-      {Array(4).fill(<InstagramImage/>)}
+      {data.map((post) => <InstagramImage post={post}/>)}
     </div>
   )
 }

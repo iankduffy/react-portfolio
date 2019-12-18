@@ -6,7 +6,7 @@ exports.handler = function(event, context, callback) {
   .then((res) => {
     callback(null, {
       statusCode: 200,
-      body: JSON.stringify(res.data.data),
+      body: JSON.stringify(res.data.data.data),
     });
   })
   .catch((e) => {
