@@ -4,7 +4,7 @@ import axios from 'axios'
 // import instagramData from '../data/instragram-data'
 
 const InstagramContainer = () => {
-  const [data, setData] = useState(instagramData)
+  const [data, setData] = useState([])
 
   useEffect(() => {
     const fetchData = async () => {
@@ -14,8 +14,8 @@ const InstagramContainer = () => {
 
     fetchData()
   }, []);
-  
-  console.log(instagramData)
+  // console.log(instagramData)
+
   return (
     <div className="container--fluid u-mar-t-md container__row">
       { data ? data.map((post) => <InstagramImage post={post}/>) : "" }

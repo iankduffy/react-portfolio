@@ -1,25 +1,35 @@
 .c-instagram{
-  &--post {
-    width: 50vw;
+  width: 50vw;
+  min-height: 50vw;
+  color: white;
+  flex: 1 1 50%;
+  cursor: pointer;
+  position: relative;
+
+  @include breakpoint-min(lg) {
+    width: 25vw;
+    min-height: 25vw;
+    flex: 1 1 25%;
+    background-color: $primary-color;
+
+    &:hover {
+      .c-instagram--text {
+        background: transparentize($color: #000, $amount: 0.2);
+        opacity: 0.7;
+        color: #fff;
+      }
+    }
+  }
+
+  &--post {  
+    background-position: center; 
+    background-size: cover;
+    width: 100%;
     min-height: 50vw;
-    color: white;
-    flex: 1 1 50%;
-    position: relative;
-    cursor: pointer;
 
     @include breakpoint-min(lg) {
-      width: 25vw;
+      width: 100%;
       min-height: 25vw;
-      flex: 1 1 25%;
-      background: $primary-color;
-
-      &:hover {
-        .c-instagram--text {
-          background: transparentize($color: #000, $amount: 0.2);
-          opacity: 0.7;
-          color: #fff;
-        }
-      }
     }
   }
 

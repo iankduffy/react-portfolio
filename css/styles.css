@@ -5209,30 +5209,44 @@ h4,
   opacity: 0.6;
 }
 
-.c-instagram--post {
+.c-instagram {
   width: 50vw;
   min-height: 50vw;
   color: white;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 50%;
           flex: 1 1 50%;
-  position: relative;
   cursor: pointer;
+  position: relative;
 }
 
 @media (min-width: 1025px) {
-  .c-instagram--post {
+  .c-instagram {
     width: 25vw;
     min-height: 25vw;
     -webkit-box-flex: 1;
         -ms-flex: 1 1 25%;
             flex: 1 1 25%;
-    background: #223a57;
+    background-color: #223a57;
   }
-  .c-instagram--post:hover .c-instagram--text {
+  .c-instagram:hover .c-instagram--text {
     background: rgba(0, 0, 0, 0.8);
     opacity: 0.7;
     color: #fff;
+  }
+}
+
+.c-instagram--post {
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  min-height: 50vw;
+}
+
+@media (min-width: 1025px) {
+  .c-instagram--post {
+    width: 100%;
+    min-height: 25vw;
   }
 }
 
