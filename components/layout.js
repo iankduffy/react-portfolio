@@ -7,9 +7,15 @@ export default ({ children, title = 'Ian Duffy | Web Developer' }) => (
     <Head>
       <title>{title}</title>
       <meta charSet='utf-8' />
-      <meta name="description" content="Ian Duffy - Web Developer Based in Leeds"/>
+      <meta name="description" content="I am a Web Developer based in Leeds, West Yorkshire. Who enjoys designing and building websites, with multiple languages and tools. Currently working with Ruby on Rails site, with multiple side projects using vanilla Javascript, reactJS and other frameworks."/>
       <meta name='viewport' content='initial-scale=1.0, width=device-width' />
       <meta name="theme-color" content="#223a57"/>
+      <meta property="og:title" content="Ian Duffy | Web Developer"/>
+      <meta property="og:description" content="I am a Web Developer based in Leeds, West Yorkshire. Who enjoys designing and building websites, with multiple languages and tools. Currently working with Ruby on Rails site, with multiple side projects using vanilla Javascript, reactJS and other frameworks."/>
+      <meta property="og:image" content="/iankduffy-socialcard.jpg"/>
+      <meta property="og:url" content="https://www.iankduffy.com/"/>
+      <meta name="twitter:card" content="summary_large_image"/>
+      <meta name="twitter:image:alt" content="Ian Duffy | Web Developer"/>
     </Head>
     <div className="u-bg-grey">
       <Nav/>
