@@ -15,7 +15,7 @@ const Nav = () => {
 
   return(
     <div className="o-header u-pad-h-sm">
-      <Link href="#"><a className="o-header__logo" onClick={(e) => scrollTo(e, "home")}><img className="u-pad-h-sm" src="/Logo.svg"/></a></Link>
+      <Link href="#"><a className="o-header__logo" onClick={(e) => scrollTo(e, "home")}><img className="u-pad-h-sm" src="/Logo.svg" alt="ID logo"/></a></Link>
       <div className="o-header__group">
         <Link href="#"><a onClick={(e) => scrollTo(e, "home")}><div className="o-header__link"><HomeIcon/>Home</div></a></Link>
         <Link href="#about"><a onClick={(e) => scrollTo(e, "about")}><div className="o-header__link"><AboutIcon/>About Me</div></a></Link>
