@@ -12,8 +12,11 @@ export default ({ children, title = 'Ian Duffy | Web Developer' }) => (
       <meta name="theme-color" content="#223a57"/>
       <meta property="og:title" content="Ian Duffy | Web Developer"/>
       <meta property="og:description" content="I am a Web Developer based in Leeds, West Yorkshire. Who enjoys designing and building websites, with multiple languages and tools. Currently working with Ruby on Rails site, with multiple side projects using vanilla Javascript, reactJS and other frameworks."/>
-      <meta property="og:image" content="/iankduffy-socialcard.jpg"/>
+      <meta property="og:image" content="https://www.iankduffy.com/iankduffy-socialcard.jpg"/>
       <meta property="og:url" content="https://www.iankduffy.com/"/>
+      <meta name="twitter:title" content="Ian Duffy | Web Developer"/>
+      <meta name="twitter:description" content="I am a Web Developer based in Leeds, West Yorkshire. Who enjoys designing and building websites, with multiple languages and tools. Currently working with Ruby on Rails site, with multiple side projects using vanilla Javascript, reactJS and other frameworks."/>
+      <meta name="twitter:image" content="https://www.iankduffy.com/iankduffy-socialcard.jpg"/>
       <meta name="twitter:card" content="summary_large_image"/>
       <meta name="twitter:image:alt" content="Ian Duffy | Web Developer"/>
     </Head>
