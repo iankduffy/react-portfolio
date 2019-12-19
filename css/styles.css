@@ -5271,6 +5271,7 @@ h4,
 .c-instagram--text {
   position: relative;
   color: #282828;
+  text-align: left;
 }
 
 @media (min-width: 738px) {
@@ -5290,6 +5291,7 @@ h4,
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    text-align: center;
   }
 }
 
