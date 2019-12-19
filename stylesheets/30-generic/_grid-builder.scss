@@ -35,6 +35,7 @@
   }
 
   &--space-evenly{
+    justify-content: space-between;
     justify-content: space-evenly;
   }
 }
@@ -110,4 +111,8 @@ main {
 
 .u-dis-flex {
   display: flex;
+}
+
+.u-no-wrap {
+  flex-wrap: nowrap;
 }

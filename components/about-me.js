@@ -11,7 +11,7 @@ const AboutMe = () => {
   }
 
   return (
-    <div className="container container__row container__row--v-center u-mar-v-lg u-pad-h-md" id="about">
+    <div className="container container__row container__row--v-center u-mar-v-lg u-pad-h-md u-no-wrap" id="about">
     <div className="col-4 col-12@md u-t-cen u-bor-gen u-pad-v-xl@md-min u-pad-v-md u-order-2@md u-pad-h-0 u-pad-h-lg@md-min">
       <h2>Links</h2>
       <div className="container__row container--space-evenly u-mar-t-md">

@@ -38,6 +38,7 @@
   }
 
   &__group {
+    justify-content: flex-start;
     @include breakpoint-max(lg) {
       display: flex;
       flex: 0 1 40%;
@@ -71,6 +72,7 @@
   stroke: $primary-color;
   stroke-width: 10px;
   max-width: 60px;
+  max-height: 70px;
   margin: 0 auto 5px;
   padding: 0;
   @include breakpoint-min(lg) {
