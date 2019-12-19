@@ -15,9 +15,9 @@ const AboutMe = () => {
     <div className="col-4 col-12@md u-t-cen u-bor-gen u-pad-v-xl@md-min u-pad-v-md u-order-2@md u-pad-h-0 u-pad-h-lg@md-min">
       <h2>Links</h2>
       <div className="container__row container--space-evenly u-mar-t-md">
-        <a className="o-link" href="https://github.com/iankduffy" aria-label="My Github" target="_blank"><FontAwesomeIcon icon={faGithubSquare} /></a>
-        <a className="o-link" href="https://www.linkedin.com/in/iankduffy" aria-label="My Linkedin" target="_blank"><FontAwesomeIcon icon={faLinkedin} /></a>
-        <a className="o-link" href="https://www.instagram.com/duffeh_leeds/" aria-label="My Instagram" target="_blank"><FontAwesomeIcon icon={faInstagram} /></a>
+        <a className="o-link" href="https://github.com/iankduffy" aria-label="My Github" target="_blank" rel="noopener"><FontAwesomeIcon icon={faGithubSquare} /></a>
+        <a className="o-link" href="https://www.linkedin.com/in/iankduffy" aria-label="My Linkedin" target="_blank" rel="noopener"><FontAwesomeIcon icon={faLinkedin} /></a>
+        <a className="o-link" href="https://www.instagram.com/duffeh_leeds/" aria-label="My Instagram" target="_blank" rel="noopener"><FontAwesomeIcon icon={faInstagram} /></a>
       </div>
     </div>
     <div className="col-8 col-12@md u-pad-l-lg u-pad-l-0@md">
