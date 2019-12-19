@@ -11,8 +11,9 @@ const InstagramContainer = () => {
       await axios.get(`/.netlify/functions/helloworld`)
       .then(data => {
         let newData = JSON.parse(JSON.stringify(data))
-        setData([newData.data])
-        console.log(data)
+        console.log({newData})
+        setData(newData["data"])
+        console.log({data})
       })
       .catch(err => {
         console.log(err)
