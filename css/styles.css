@@ -707,9 +707,11 @@ main {
   display: flex;
 }
 
-.u-no-wrap {
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+@media (min-width: 738px) {
+  .u-no-wrap {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
 }
 
 

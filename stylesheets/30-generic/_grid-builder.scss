@@ -114,5 +114,7 @@ main {
 }
 
 .u-no-wrap {
-  flex-wrap: nowrap;
+  @include breakpoint-min(md) {
+    flex-wrap: nowrap;
+  }
 }
