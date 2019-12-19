@@ -20,7 +20,7 @@ const InstagramContainer = () => {
 
   return (
     <div className="container--fluid u-mar-t-md container__row">
-      { data !== undefined ? data.forEach((post) => {<InstagramImage post={post}/>}) : "" }
+      { data.forEach((post) => {<InstagramImage post={post}/>}) }
     </div>
   )
 }
