@@ -5223,6 +5223,11 @@ h4,
   transition: 500ms;
 }
 
+.c-project:hover:not(.c-project--disabled) .c-project__image img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
 .c-project--disabled {
   opacity: 0.6;
 }

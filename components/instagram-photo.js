@@ -1,7 +1,4 @@
-
-
 const InstagramImage = ({image}) => (
-  
   <div className="c-instagram">
     <div className="c-instagram--post" style={{backgroundImage: `url(${image.images.standard_resolution.url})`}}>
     </div>

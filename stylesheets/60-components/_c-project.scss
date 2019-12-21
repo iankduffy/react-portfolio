@@ -34,14 +34,10 @@
     }
   }
 
-  &:hover{
-    // .c-project__btn {
-    //   background: $transpare-purple;
-    // }
-    
-    // .c-project__image img {
-    //   transform: scale(1.1); 
-    // }
+  &:hover:not(.c-project--disabled){
+    .c-project__image img {
+      transform: scale(1.1); 
+    }
   }
 
   &--disabled {
