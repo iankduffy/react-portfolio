@@ -1,6 +1,7 @@
 const withOffline = require('next-offline')
 
-module.exports = {
+
+const nextConfig = {
     module: {
       rules: [
         {
@@ -21,3 +22,5 @@ module.exports = withCSS({
     url: false
     }
 }) 
+
+module.exports = withOffline(nextConfig)
