@@ -46,8 +46,9 @@
 
 .u-transition-in {
   animation: 700ms linear 500ms animateIn;
+  opacity: 0; 
+  transform: translateY(10%)
 }
-
 
 @keyframes animateIn {
   0% { 
