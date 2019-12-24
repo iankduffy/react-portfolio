@@ -19,6 +19,7 @@ export default ({ children, title = 'Ian Duffy | Web Developer' }) => (
       <meta name="twitter:image" content="https://www.iankduffy.com/iankduffy-socialcard.jpg"/>
       <meta name="twitter:card" content="summary_large_image"/>
       <meta name="twitter:image:alt" content="Ian Duffy | Web Developer"/>
+      <link rel="manifest" href="/manifest.json"></link>
     </Head>
     <div className="u-bg-grey">
       <Nav/>
