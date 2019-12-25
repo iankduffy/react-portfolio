@@ -26,6 +26,10 @@ module.exports = withOffline(
   })
 )
 
+// module.exports = withOffline({
+//   devSwSrc: '/service-worker.js'
+// })
+
 // model.exports = withPlugins([
 //   [withCSS, {
 //     cssLoaderOptions: {
