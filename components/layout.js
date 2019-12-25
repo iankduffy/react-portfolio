@@ -20,6 +20,7 @@ export default ({ children, title = 'Ian Duffy | Web Developer' }) => (
       <meta name="twitter:card" content="summary_large_image"/>
       <meta name="twitter:image:alt" content="Ian Duffy | Web Developer"/>
       <link rel="manifest" href="/manifest.json"></link>
+      <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"></link>
     </Head>
     <div className="u-bg-grey">
       <Nav/>
