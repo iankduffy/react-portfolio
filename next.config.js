@@ -26,6 +26,33 @@ module.exports = withOffline(
   })
 )
 
+// model.exports = withPlugins([
+//   [withCSS, {
+//     cssLoaderOptions: {
+//       url: false
+//     }
+//   }], 
+//   [withOffline, {
+//     workboxOpts: {
+//       swDest: 'workbox-service-worker.js',
+//       globPatterns: ['static/**/*'],
+//       globDirectory: '.',
+//       runtimeCaching: [
+//         {
+//           urlPattern: /^https?.*/,
+//           handler: 'NetworkFirst',
+//           options: {
+//             cacheName: 'offlineCache',
+//             expiration: {
+//               maxEntries: 200,
+//             },
+//           },
+//         },
+//       ],
+//     },
+//   }]
+// ])
+
 // const nextConfig = {
 //   target: 'serverless',
 //   transformManifest: manifest => ['/'].concat(manifest), // add the homepage to the cache
