@@ -7264,6 +7264,11 @@ netlify@^3.0.0:
     through2-filter "^3.0.0"
     through2-map "^3.0.0"
 
+next-compose-plugins@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/next-compose-plugins/-/next-compose-plugins-2.2.0.tgz#95cd8eb40ab0652070d76572fb648354191628b0"
+  integrity sha512-ChUlpT9tWfJ7YxqGw/WQ2T1gf8EeX93n1XqeQw0lkvGa7seszahvF4eOZUJoq7Hetsbzg4UHVnPoCXfXTyQR3g==
+
 next-offline@^4.0.6:
   version "4.0.6"
   resolved "https://registry.yarnpkg.com/next-offline/-/next-offline-4.0.6.tgz#c2c5f1a08518b83cd60cafb9485752955ebefc00"
