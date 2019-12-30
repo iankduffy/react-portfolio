@@ -13,6 +13,10 @@ app.prepare()
     return "handle(req, res)"
   })
 
+  server.get('/api' , (req, res) => {
+    res.json({ username: 'Flavio' })
+  })
+
   server.get('*', (req, res) => {
     return handle(req, res)
   })
