@@ -9,13 +9,9 @@ app.prepare()
 .then(() => {
   const server = express()
 
-  server.get('/.netlify/functions/helloworld', (req, res) => {
-    return "handle(req, res)"
-  })
-
-  server.get('/api' , (req, res) => {
-    res.json({ username: 'Flavio' })
-  })
+  // server.get('/.netlify/functions/helloworld', (req, res) => {
+  //   // return "hello"
+  // })
 
   server.get('*', (req, res) => {
     return handle(req, res)
