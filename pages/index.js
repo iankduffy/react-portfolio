@@ -27,7 +27,7 @@ const Home = () => {
         <WorkExperience/>
         {/* <FullWidthLink/> */}
         <Projects />
-        <h2 className="u-t-cen">See What I'm Doing</h2>
+        {/* <h2 className="u-t-cen">See What I'm Doing</h2> */}
         {/* <InstagramContainer /> */}
       </Layout>
     </div>
