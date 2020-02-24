@@ -8,10 +8,10 @@ const InstagramContainer = () => {
   // console.log(JSON.parse(JSON.stringify(instagramData)))
   useEffect(() => {
     const fetchData = async () => {
-      await axios.get(`/.netlify/functions/instagram`)
+      await axios.get(`/api/instagram-images`)
       .then(res => {
-        let newData = JSON.parse(JSON.stringify(res))
-        let images = newData.data
+        let data = JSON.parse(JSON.stringify(res))
+        let images = data
         setImages(images)
       })
       .catch(err => {
