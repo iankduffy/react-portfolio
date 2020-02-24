@@ -11,8 +11,8 @@ const InstagramContainer = () => {
       await axios.get(`/api/instagram-images`)
       .then(res => {
         let data = JSON.parse(JSON.stringify(res))
-        let images = data
-        console.log(data, images)
+        // let images = data
+        console.log(data)
         // setImages(images)
       })
       .catch(err => {
