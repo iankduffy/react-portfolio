@@ -26,10 +26,7 @@ const InstagramContainer = () => {
 
   return (
     <div className="container--fluid u-mar-t-md container__row">
-      {/* { images !== undefined ? 
-      images.map((image, i) => {
-        return <InstagramImage image={image} key={i}/> }) 
-     : ""} */}
+      "images"
     </div>
   )
 }
