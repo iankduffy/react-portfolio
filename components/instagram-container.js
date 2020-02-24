@@ -12,7 +12,8 @@ const InstagramContainer = () => {
       .then(res => {
         let data = JSON.parse(JSON.stringify(res))
         let images = data
-        setImages(images)
+        console.log(data, images)
+        // setImages(images)
       })
       .catch(err => {
         console.log(err)
