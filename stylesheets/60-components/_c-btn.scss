@@ -9,6 +9,7 @@
   text-decoration: none;
   transition: 400ms; 
   background: #EEEEEE;
+  flex: 1 0 30%;
 
   &:hover{
     background: transparentize(#EEEEEE, 0.1)
