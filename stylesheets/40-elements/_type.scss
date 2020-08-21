@@ -2,6 +2,10 @@ body {
   font-family: $global-font-styles; 
 }
 
+section {
+  content-visibility: auto
+}
+
 p {
   margin-bottom: 10px; 
 }

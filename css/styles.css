@@ -4750,6 +4750,10 @@ body {
   font-family: "Lato", sans-serif;
 }
 
+section {
+  content-visibility: auto;
+}
+
 p {
   margin-bottom: 10px;
 }
