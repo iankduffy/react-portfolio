@@ -1,0 +1,8 @@
+@import '../../../stylesheets/module-basics.scss';
+
+.articleContainer {
+  background: $secondary-color;
+  color: #fff;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr) );
+}

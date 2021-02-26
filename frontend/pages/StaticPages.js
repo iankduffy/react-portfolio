@@ -15,23 +15,14 @@ const staticPageQuery = `*[_type == "routes" && slug.current == $slug][0] {
     ...,
     content[] {
       ...,
-      _type == "inspiration" => {
-        products[]->{
+      _type == "articleFullWidthBanner" => {
+        blogPost->
+      },
+      _type == "blogPostContainer" => {
+        blogs[]-> {
           ...
         }
-      }, 
-      _type == "productNavigation" => {
-        product->{
-          title, 
-          "price": defaultProductVariant.price, 
-        },
-        ...,
       },
-      _type == "productAddToBag" => {
-        product->{
-          ...
-        },
-      }
     }
   }
 }`
@@ -41,22 +32,14 @@ const homePageQuery = `*[_type == "siteSettings"][0] {
     ...,
     content[] {
       ...,
-      _type == "inspiration" => {
-        products[]->{
+      _type == "articleFullWidthBanner" => {
+        blogPost->
+      },
+      _type == "blogPostContainer" => {
+        blogs[]-> {
           ...
-        }
-      }, 
-      _type == "productNavigation" => {
-        product->{
-          title, 
-          "price": defaultProductVariant.price, 
         }
       },
-      _type == "productAddToBag" => {
-        product->{
-          ...
-        },
-      }
     }
   }
 }`

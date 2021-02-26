@@ -1,0 +1,8 @@
+@import '../../../stylesheets/module-basics.scss';
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 20px;
+}

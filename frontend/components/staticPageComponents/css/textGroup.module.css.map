@@ -1,0 +1,18 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,KAAK,CAAC;EACJ,OAAO,EAAE,IAAI;EACb,qBAAqB,EAAE,oCAAoC;EAC3D,kBAAkB,EAAE,qCAAqC;EACzD,GAAG,EAAE,IAAI;CACV",
+    "sources": [
+        "../textGroups/textGroup.module.scss",
+        "../../../stylesheets/module-basics.scss",
+        "../../../stylesheets/10-settings/__manifest.scss",
+        "../../../stylesheets/10-settings/_colors.scss",
+        "../../../stylesheets/10-settings/_fonts.scss",
+        "../../../stylesheets/10-settings/_global.scss",
+        "../../../stylesheets/10-settings/_grid-setting.scss",
+        "../../../stylesheets/10-settings/_sizes.scss",
+        "../../../stylesheets/20-tools/__manifest.scss",
+        "../../../stylesheets/20-tools/_media-quires.scss"
+    ],
+    "names": [],
+    "file": "textGroup.module.css"
+}

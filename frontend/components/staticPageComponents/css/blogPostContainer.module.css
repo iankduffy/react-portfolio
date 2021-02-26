@@ -1,0 +1,9 @@
+.container {
+  background: #5E6F84;
+  color: #fff;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(400px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+/*# sourceMappingURL=blogPostContainer.module.css.map */
